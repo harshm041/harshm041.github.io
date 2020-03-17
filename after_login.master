@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="after_login.master.cs" Inherits="after_login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="css/Stylesheet1.css" rel="stylesheet" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="jumbotron" style=" margin-bottom:0px; color:white; background-color:Black; height:200px; padding-top:30px;">
+        <div class="container text-center w3-animate-zoom">
+        <h1><span style="color:#cc00cc">G</span>amer's <span style="color:#cc00cc">S</span>top</h1>
+        <p>Games Ahead</p>
+        </div>
+    </div>
+   <div class="my-navbar"><a href="home.aspx">Home</a>
+  <a href="gamescart.aspx">Shop</a>
+  <a href="offerscart.aspx">Offers</a>
+  <a href="mostpopular.aspx">HotStuff</a>
+  <a href="search.aspx">Search</a>
+  <div class="my-dropdown">
+    <button class="my-dropbtn">Category's 
+        </button>
+    <div class="my-dropdown-content">
+      <a href="fps.aspx">FPS</a>
+      <a href="tps.aspx">TPS</a>
+      <a href="adventure.aspx">Adventure</a>
+      <a href="fantasy.aspx">Fantasy</a>
+      <a href="history.aspx">History</a>
+      <a href="role playing.aspx">Role Playing</a>
+    </div>
+  </div>
+  
+
+  <div class="my-navbar-right">
+  <div class="my-dropdown">
+  <button class="my-dropbtn">My Account</button>
+  <div class="my-dropdown-content">
+  <a href="cart.aspx">Wishlist</a>
+  <a href="my orders.aspx">My Orders</a>
+  <a href="transaction details.aspx">My Transactions</a>
+  <a href="Download.aspx">Downloads</a>
+  </div>
+  </div> 
+      <asp:Button ID="logout_btn" runat="server" CssClass="btn btn-danger navbar-btn" 
+          Text="Logout"  onclick="logout_btn_Click" style=" margin-right:5px;" UseSubmitBehavior="false" 
+          Font-Bold="True" />
+    </div>
+  </div>
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

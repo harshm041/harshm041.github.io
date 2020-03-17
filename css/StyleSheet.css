@@ -1,0 +1,124 @@
+﻿.footer
+{
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align:center;
+}
+/* my-nav css-start */
+.my-navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+  
+}
+.my-navbar-right{float:right;}
+/* Links inside the navbar */
+.my-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+/* The dropdown container */
+.my-dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+/* Dropdown button */
+.my-dropdown .my-dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.my-navbar a:hover, .my-dropdown:hover .my-dropbtn {
+  background-color: #FFFFFF;
+  color:Black;
+    border:1px ;
+  border-radius:1px;
+}
+
+/* Dropdown content (hidden by default) */
+.my-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.my-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.my-dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.my-dropdown:hover .my-dropdown-content {
+  display: block;
+}
+
+/* my-nav css-end */
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  text-align:center;
+  padding: 10px;
+   
+  
+   /* Should be removed. Only for demonstration */
+}
+/*round corners*/
+.round-lg
+{
+   border-radius: 12px;
+}
+.round-sm
+{
+    border-radius:4px;}
+.round-md
+{
+    border-radius:6px;
+    
+    }
+.button-shadow1
+{
+    box-shadow: 5px 4px #888888;}
+    .hover-shadow:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.shadow:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.form-container{border:1px solid #FFFFFF; padding:50px 60px; padding-bottom:10px;
+-webkit-box-shadow: 0px 0px 57px 0px rgba(97,92,97,1);
+-moz-box-shadow: 0px 0px 57px 0px rgba(97,92,97,1);
+box-shadow: 0px 0px 57px 0px rgba(97,92,97,1);
+                }

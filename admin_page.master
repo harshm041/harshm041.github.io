@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_page.master.cs" Inherits="admin_page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+<link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="css/Stylesheet1.css" rel="stylesheet" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:Black; color:White; margin:0px 0px 0px 0px;">
+<div class="jumbotron"  style=" margin-bottom:0px;  color:white; background-color:Black;  height:200px; padding-top:30px;">
+        <div class="container text-center ">
+        <h1><span style="color:#cc00cc">G</span>amer's <span style="color:#cc00cc">S</span>top</h1>
+        <p>Admin Desk</p>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+    <div class="my-navbar">
+    <a href="add_product.aspx">Add Game</a>
+    <a href="edit_product.aspx">Edit Game</a>
+    <a href="remove_product.aspx">Remove Game</a>
+    <a href="addoffer.aspx">Add Offer</a>
+    <a href="remove_offer.aspx">Remove Offer</a>
+    <a href="allorders.aspx">Orders</a>
+    <div class="my-navbar-right">
+        <asp:Button ID="logout_admin" runat="server" Text="Logout"  
+            CssClass="btn btn-danger navbar-btn"  style=" margin-right:5px;" 
+            onclick="logout_admin_Click" CausesValidation="false"  />
+    </div>
+    </div>
+    <div >
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" >
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
